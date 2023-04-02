@@ -1,0 +1,25 @@
+.container {
+    height: 530px;
+}
+main {
+    padding: 1rem;
+}
+
+.head {
+    margin: 10px;
+    text-align-last: center;
+}
+
+.head h2 {
+    color: orange;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 186, 59);
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+}

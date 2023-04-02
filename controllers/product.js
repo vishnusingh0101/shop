@@ -1,0 +1,25 @@
+const path = require('path');
+
+const rootDir = require('../util/path');
+
+exports.getAddProduct = (_req, _res) => {
+    _res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+    // ...
+};
+
+exports.postAddProduct = (_req, _res)=>{
+    console.log(_req.body);
+    _res.redirect('/shop/');
+};
+
+exports.getContact = (_req, _res, next)=>{
+    _res.sendFile(path.join(rootDir, 'views', 'contact.html'));
+};
+
+exports.postSuccess = (_req, _res, next)=>{
+    _res.sendFile(path.join(rootDir, 'views', 'successful.html'));
+};
+
+exports.getShop = (_req, _res, next) => {
+    _res.sendFile(path.join(rootDir, 'views', 'shop.html'));
+};
